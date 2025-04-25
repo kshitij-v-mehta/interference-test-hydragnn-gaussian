@@ -1,0 +1,5 @@
+gpu count, mini batch size, effective batch size, time
+40, 32, 10240, 86.914
+40, 32, 10240, 87.431
+40, 32, 10240, 86.898
+40, 32, 10240, 87.439

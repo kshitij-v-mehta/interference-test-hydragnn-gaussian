@@ -1,0 +1,22 @@
+GPTL version info: 8.1.1
+Total ranks in communicator=40
+nthreads on rank 0=7
+'N' used for mean, std. dev. calcs.: 'ncalls'/'nthreads'
+'ncalls': number of times the region was invoked across tasks and threads.
+'nranks': number of ranks which invoked the region.
+mean, std. dev: computed using per-rank max time across all threads on each rank
+wallmax and wallmin: max, min time across tasks and threads.
+
+name               ncalls nranks mean_time   std_dev   wallmax (rank  thread)   wallmin (rank  thread)
+train                 160     40    42.862     0.000    42.862 (    34     0)    42.861 (    12     0)
+dataload             8000     40    28.773     0.828    30.435 (     0     0)    27.044 (     4     0)
+epoch_begin          8000     40    20.149     0.828    21.811 (     0     0)    18.420 (     4     0)
+get                261120     40     6.799     0.071     6.961 (    24     0)     6.698 (     3     0)
+epoch_end            8000     40     0.876     0.085     1.008 (     3     0)     0.678 (    24     0)
+zero_grad            8000     40     0.063     0.006     0.075 (    24     0)     0.054 (     5     0)
+get_head_indices     8000     40     0.165     0.003     0.171 (    24     0)     0.160 (     3     0)
+forward              8000     40     3.093     0.043     3.203 (    24     0)     3.006 (    19     0)
+enc_forward          8000     40     0.797     0.020     0.845 (    24     0)     0.766 (     3     0)
+branch_forward       8000     40     2.039     0.022     2.094 (     6     0)     1.992 (    19     0)
+backward             8000     40     9.541     0.828    11.346 (     4     0)     7.871 (    25     0)
+opt_step             8000     40     0.530     0.020     0.594 (    16     0)     0.476 (    25     0)
